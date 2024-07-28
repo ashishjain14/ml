@@ -20,4 +20,12 @@ Exploratory data analysis is basically to analyse the data, aggregate the findin
 9. Now the next step is to analyze the values and see if anyone of them requires the data type to be changed for example changing a string column to integer
 10. Next step is to check if we need to convert some of the data into bins, for example some variables such as age can be grouped into bins as it may be too much to create individual bars for each age
 11. We can also remove some columns which actually will not add any value into our investigation for example customerId, customer name may not add any value
-12. This completes the data cleaning process
+12. This completes the **Data Cleaning Process**
+13. Now the next step is to run Univariate Analysis, basically for every other variable try to get an idea. For this we can use **countplot** and plot the graphs for all the categorical variables against dependent variable
+14. Now we can run outlier analysis to figure out what percentage of records are outlier, typically if the outlier are more than 0.3% then it means that the distribution is not a Normal distribution hence it is worth to check the distribution which can be done by plotting a KDEPlot. A KDEPlot would give details about skeweness of the data. And then we can apply startegies such as log, double log, inverse etc to reduce the skewness of the data.
+15. Now the next step is to run numerical analysis for variables which are numerical in nature, for numerical analysis we also have to make couple of changes
+    * We have to transform dependent variable into numerical
+    * Apply one-hot encoding to create dummy variables
+16. Now we can plot a correlation bar plot between dependent variable and all the predictor or independent variables. This will give us lot more insight about positive as well negative cases for example why a customer is churning and why a customer is not churning.
+17. Next we can plot a heatmap between all the variables, this will give us detail of correlation across all variables. **please note point #16 talks about correlation between dependent and independent variable however heatmap is to get correlation details between all the variables and not just predictor and dependent variables**
+18. Next we will apply Bivariate, trivariate and multivariate analysis to get more insights on the data for example.
